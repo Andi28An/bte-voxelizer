@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 53
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd1d4ad8db4f0fc4793f9e010e57f1d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _userAccessTokenMap:
+  - server: {fileID: 0}
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI3M2NmMTE0Zi02ZDUzLTRlMjYtYTdjYi05Yzc4ZmJjMGEwNmEiLCJpZCI6MTc1MzI4LCJpYXQiOjE2OTg4MzQxNzZ9.Cw-lMuGgyuFYwS2UPsRkpZg_-2Fma7bTvhOQ8HeqTGc
+  - server: {fileID: 11400000, guid: e2b0fe00853a4ac48ab955d03a4ed421, type: 2}
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJhODgyMWEzNS03Nzk3LTRmYTMtOTgxMy0yNzFhZWE2NzU5ZjUiLCJpZCI6MTc1MzI4LCJpYXQiOjE3MzY1NDkzMjB9.93OX2qzyR2Nkg5v69LzByxHMkR0NgqanAxYIckoLj_Q
+  _currentCesiumIonServer: {fileID: 11400000, guid: e2b0fe00853a4ac48ab955d03a4ed421, type: 2}

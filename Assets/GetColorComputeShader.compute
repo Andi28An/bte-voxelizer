@@ -1,0 +1,31 @@
+#pragma kernel CSMain
+
+
+//SamplerState mySampler : register(s0);
+Texture2D<float4> inputTexture : register(t0); // The input texture
+RWStructuredBuffer <float4> outputBuffer; // The output buffer
+float uv_x; // The UV coordinates
+float uv_y; // The UV coordinates
+
+[numthreads(1, 1, 1)]
+void CSMain(uint3 id : SV_DispatchThreadID)
+{
+    // Fetch the color from the texture using the provided UV coordinates
+    //float2 uv = float2(uv_x, uv_y);
+    //float4 color = inputTexture[uv];
+    //outputBuffer[0] = color.r;
+    //outputBuffer[1] = color.g;
+    //outputBuffer[2] = color.b;
+    
+    //SamplerState mySampler
+    //{
+    //    Filter = Point;
+    //    AddressU = Clamp;
+    //    AddressV = Clamp;
+    //};
+    
+    float4 color = inputTexture[uint2(uv_x, uv_y)];
+    outputBuffer[0] = (float) color.r;
+    outputBuffer[1] = (float) color.g;
+    outputBuffer[2] = (float) color.b;
+}
